@@ -1,0 +1,39 @@
+@media (max-width: 576px) {
+  .main-sidebar {
+    display: inherit;
+  }
+}
+
+@media (max-width: 576px) {
+  #company-name {
+    display: none;
+  }
+}
+
+
+
+@media(max-width: 576px){
+  .m-page-container{
+
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-left: 0px;
+
+  }
+}
+
+@media(max-width: 1440px){
+  .m-page-container{
+    width: calc(100% - 200px);
+    height: calc(100% - 60px);
+    margin-left: 200px;
+
+  }
+}
+
+#browse-txt {
+}
+
+#v-menu-nav {
+  border: 0;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MUSICDEN</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/fastclick.js"></script>
+
+</head>
+
+<body class="main-body">
+    <div class="wrapper">
+        <header class="main-navigation">
+            <div class="main-nav-leftside">
+                <div class="logo"><button class="nav-icon-btn" type="button" id="sidebarCollapse" onclick="toggleSidebar()"> <i class="fa fa-navicon" id="logo-btn"></i></button><span id="company-name" class="logo">&nbsp;MusicKit</span></div>
+            </div>
+            <div class="main-search-bar">
+                <form class="form-search" action="/search" method="get" autocomplete="off"><label class="main-search"></label>
+                    <div class="form-search-input"><input class="form-control search-input" type="search" required="" minlength="2" placeholder="Search For Your Favorite Songs" role="combobox" autocomplete="off" aria-expanded="false"><i class="fas fa-search" id="search-icon"></i></div>
+                </form>
+            </div>
+
+
+            <div class="main-nav-rightside">
+                <div class="upload-button"><a class="upload-btn" href="#"><i class="fa fa-cloud-upload"></i>&nbsp;Upload</a><a class="notification-btn" href="#"><i class="fa fa-bell" id="notification-icon"></i></a>
+                    <div id="account-dropdown" class="dropdown"><button class="btn btn-primary main-nav-button dropdown-toggle" data-toggle="dropdown"></button>
+                        <ul id="account-drop-menu" class="dropdown-menu" role="menu">
+                            <li class="sub-menu"> <i class="fa fa-user-circle"></i> <span style="margin: 3px;"> <a href="#" style="text-decoration:none; color:inherit;"> My Profile</a></span></li>
+                            <li class="sub-menu"> <i class="fas fa-edit"></i> <span style="margin: 3px;"> <a href="#" style="text-decoration:none; color:inherit;">Edit Profile</a></span></li>
+                            <li class="sub-menu"> <i class="fa fa-cog"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;"> Settings</a></span></li>
+                            <hr style="border-color: orange;">
+                            <li class="sub-menu"> <i class="fas fa-microphone"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;"> Become An Artist</a></span></li>
+                            <hr style="border-color: orange;">
+
+
+                            <li class="sub-menu"> <i class="fa fa-dashboard"></i> <span style="margin: 3px;"> <a href="#" style="text-decoration:none; color:inherit;">Dashboard</a></span></li>
+                            <li class="sub-menu"> <i class="fa fa-music"></i> <span style="margin-top: 3px; "> <a href="#" style="text-decoration:none; color:inherit;">My Songs</a></span></li>
+                            <li class="sub-menu"> <i class="fas fa-heart"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;">My Likes</a></span></li>
+                            <li class="sub-menu"> <i class="fas fa-wallet"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;">My Earnings</a></span></li>
+
+                              <hr style="border-color: orange;">
+                              <li class="sub-menu"> <i class="far fa-hdd"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;">Admin Panel</a></span></li>
+                              <hr style="border-color: orange;">
+
+                              <li class="sub-menu"> <i class="fas fa-phone"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;">Contact Us</a></span></li>
+                              <li class="sub-menu"> <i class="fas fa-power-off"></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;">Logout</a></span></li>
+
+                               <br>
+                               <hr style="border-color: orange;">
+                              <li class="sub-menu"> <i class="fas fa-lightbulb "></i> <span style="margin: 3px;"><a href="#" style="text-decoration:none; color:inherit;">Dark Mode</a></span></li>
+
+
+
+
+
+
+
+
+                        </ul>
+                    </div><a class="admin-panel" href="#"><i class="far fa-envelope"></i></a></div>
+            </div>
+        </header>
+        <aside class="main-sidebar" id="sidebar">
+            <div class="sidemenu-inner">
+                <h3 class="container browse">Browse</h3>
+                <ul class="nav nav-tabs v-menu">
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-home v-menu-icons"></i><span class="v-menu-links">Home</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="icon-fire v-menu-icons"></i><span class="v-menu-links">Top Songs</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-chart-line v-menu-icons"></i><span class="v-menu-links">Trending&nbsp;</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="material-icons v-menu-icons">library_music</i><span class="v-menu-links">Top Albums</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-newspaper v-menu-icons"></i><span class="v-menu-links">Newspaper</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="material-icons v-menu-icons">radio</i><span class="v-menu-links">Live Radio</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-podcast v-menu-icons"></i><span class="v-menu-links">Podcasts</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="material-icons v-menu-icons">live_tv</i><span class="v-menu-links">Videos</span></a></li>
+                </ul>
+
+                <h5 id="library">STORE</h5>
+                <ul class="nav nav-tabs v-menu" id="library-menu">
+                   <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-store-alt v-menu-icons"></i><span class="v-menu-links">Browse</span></a></li>
+                   <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fa fa-cart-arrow-down v-menu-icons"></i><span class="v-menu-links">Purchased</span></a></li>
+
+              </ul>
+
+
+                <h5 id="library">MY LIBRARY</h5>
+                <ul class="nav nav-tabs v-menu" id="library-menu">
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="far fa-heart v-menu-icons"></i><span class="v-menu-links">My Likes</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="icon-playlist v-menu-icons"></i><span class="v-menu-links">My Playlist</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-podcast v-menu-icons"></i><span class="v-menu-links">My Podcasts</span></a></li>
+                    <li class="nav-item" id="v-menu-nav"><a class="nav-link active" id="v-menu-links" href="#"><i class="fas fa-retweet v-menu-icons"></i><span class="v-menu-links">Re-Posts</span></a></li>
+                </ul>
+
+                <hr style="color:grey;">
+                <div class="pages">
+
+                <a href="#">Privacy Policy</a>
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Legal</a>
+                <a href="#">Cookies</a>
+
+
+              </div>
+
+            </div>
+        </aside>
+
+        <div class="m-page-container row" id"main-page" >
+
+          <div class="artists-slider shadow-lg row responsive">
+
+            <div class="player-card shadow-lg responsive">
+              <div class="player-card-sm card shadow-lg">
+                <img src="assets/img/sky-y.jpeg" alt="Title">
+                <h4>Because of you</h4>
+                <p>Onenira ft Lil K De Gonga</p>
+
+                <div class="container player-control" id="">
+
+                  <button type="button" name="button"> <i class="fas fa-backward"></i> </button>
+                  <button type="button" name="button" id="play-button"> <i class="fas fa-play"></i> </button>
+                  <button type="button" name="button"> <i class="fas fa-forward"></i> </button>
+
+
+                  <audio src="assets/Any Day_beatzclik.mp3">
+
+                  </audio>
+
+
+
+                </div>
+
+              </div>
+
+            </div>
+            <!-- <div class="col-sm-4" id="song-info">
+              <div class="card">
+                <div class="cover-art">
+                  <img src="assets/img/sky-y.jpeg" alt="SKY-Y">
+
+                </div>
+
+
+              </div>
+              <h5 class="artists-name">Onenira  </h5>
+
+            </div> -->
+
+          </div>
+          <div class="albums-title">
+            <h5> Albums </h5>
+
+            <div class="albums-control">
+
+            <button  class="arrow-left"> <i class="fas fa-angle-left"></i> </button>
+            <button  class="arrow-right"> <i class="fas fa-angle-right"></i> </button>
+          </div>
+
+          </div>
+
+          <!-- album row begining -->
+        <div class="albums-row row" >
+
+            <div class="album-items">
+
+              <img src="assets/img/sky-y.jpeg" alt="">
+
+               <span class="Artist-name"> Onenira Lil K </span>
+               <span class="number-songs"> 20 Songs
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+
+
+               </span>
+
+            </div>
+            <div class="album-items">
+              <img src="assets/img/Fancy-Gadam-Abudu-Andani.jpg" alt="">
+              <span class="Artist-name"> Fancy Gadam </span>
+              <span class="number-songs"> 15 Songs
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+
+            </div>
+            <div class="album-items">
+              <img src="assets/img/Fancy-Gadam-Biyari-Gbani-.jpg" alt="">
+              <span class="Artist-name"> Mujahid Bello </span>
+              <span class="number-songs"> 30 Songs
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+
+
+            </div>
+            <div class="album-items">
+              <img src="assets/img/dj-kaywise-–-skeletun-mixtape.jpg" alt="">
+              <span class="Artist-name">  Tekno </span>
+              <span class="number-songs"> 24 Songs
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </span>
+
+
+            </div>
+            <div class="album-items">
+              <img src="assets/img/work.jpg" alt="">
+
+
+              <span class="Artist-name">  Drake </span>
+              <span class="number-songs"> 30 Songs
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+
+
+            </div>
+            <div class="album-items">
+              <img src="assets/img/Wizkid-Ayo-Cover-Art-front.jpg" alt="">
+              <span class="Artist-name">  Wizkid </span>
+              <span class="number-songs"> 25 Songs
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+
+
+            </div>
+
+
+
+
+          </div>
+
+          <!-- album row ending  -->
+
+          <div class="trending">
+            <div class="trending-songs">
+              <button  id="trending-button">
+                 <i class="fas fa-chart-line" style="color: orange"></i>
+                <label class="trending-title"> Trending</label>
+              </button>
+            </div>
+
+            <div class="trending-track row">
+
+            </div>
+
+
+        
+
+          </div>
+
+
+        </div>
+        <footer class="pl-control-container">
+
+        </footer>
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,621 @@
+.main-body {
+  background-color: #F2F2F2;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-navigation {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  overflow: initial;
+  display: inline;
+  border-bottom: 1px solid #eaeaea;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.main-nav-rightside {
+  white-space: nowrap;
+  position: relative;
+  z-index: 3;
+  float: right;
+  top: 5px;
+}
+
+.main-nav-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 60px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  background-image: url("../../assets/img/user.jpg");
+}
+
+.main-nav-leftside {
+  white-space: nowrap;
+  position: relative;
+  z-index: 3;
+  float: left;
+}
+
+.logo {
+  width: 128px;
+  height: 60px;
+  display: inline-block;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#company-name {
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.main-search-bar {
+  width: 100%;
+  position: absolute;
+  line-height: 60px;
+  z-index: 1;
+  padding: 14px 0;
+  max-width: 450px;
+  margin-left: 30%;
+}
+
+.form-search {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-search {
+  position: absolute;
+}
+
+.form-search-input {
+  height: 34px;
+  display: inline-block;
+}
+
+.search-input {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 6px;
+  font-family: Open sans, sans-serif;
+  padding: 0 40px 0 10px;
+  width: 100%;
+  height: 34px;
+  font-size: 1.077em;
+  color: #666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  letter-spacing: -.64px;
+}
+
+#search-icon {
+  position: absolute;
+  margin-left: 94%;
+  margin-top: 7px;
+  color: #ff7a00;
+  font-size: larger;
+}
+
+.upload-button {
+  display: inline-block;
+  line-height: 60px;
+  padding-left: 5px;
+  padding-right: 0;
+  z-index: 11;
+  vertical-align: top;
+  position: relative;
+}
+
+.upload-btn {
+  border: 0;
+  background: #ffa200;
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 18px;
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: -.5px;
+  font-size: .8125rem;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  border-radius: 25px;
+  bottom: 10px;
+  right: 16px;
+}
+
+#notification-icon {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  height: 60px;
+  position: relative;
+  width: 33px;
+  color: #999;
+  font-size: larger;
+}
+
+.main-sidebar {
+  background: #fff;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: 1px solid #eaeaea;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  z-index: 18;
+  height: calc(100vh - 60px);
+  top: 60px;
+  transition: all 250ms linear;
+}
+
+#sidebar.active {
+  left: -200px;
+  transition: all 500ms linear;
+}
+
+#main-page.close {
+  left: -200px;
+  transition: all 500ms linear;
+}
+
+#account-dropdown {
+  display: inline;
+  position: relative;
+}
+
+#account-drop-menu {
+  background: #222;
+  position: absolute;
+  max-width: 250px;
+  line-height: normal;
+  transition: opacity .15s ease-in-out, transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+  z-index: 99999;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.admin-panel {
+  font-size: xx-large;
+  color: inherit;
+  margin-right: 54px;
+  margin-left: 10px;
+  color: rgb(153, 153, 153);
+}
+
+.sub-menu {
+  line-height: 1;
+  color: white;
+  font-size: small;
+  margin: 10px 10px 15px 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.sub-menu i {
+  color: orange;
+}
+
+.sub-menu:hover {
+  color: orange;
+}
+
+.upload-btn:hover {
+  background-color: black;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+#browse-txt {
+  font-size: medium;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.browse {
+  top: 24px;
+}
+
+.sidemenu-inner {
+  padding: 10px 0 100px 0;
+  position: relative;
+  min-height: 100%;
+}
+
+.container.browse {
+  margin-left: 0px;
+  top: 0;
+  font-size: medium;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.sidemenu-inner {
+  padding: 15px 20px 10px;
+  display: block;
+}
+
+.v-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: .8125rem;
+}
+
+.v-menu-icons {
+  font-size: large !important;
+  font-weight: 800;
+  color: orange;
+}
+
+.v-menu-links {
+  font-weight: 500;
+  display: inline-block;
+  color: #383838;
+  position: relative;
+  margin-left: 8px;
+  font-size: inherit;
+  border: none !important;
+  text-align: left;
+  letter-spacing: -.5px;
+}
+
+.nav-tabs {
+  border: 0 !important;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 5px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+#library {
+  margin-top: 25px;
+  color: grey;
+  margin-left: 14px;
+  font-size: small;
+}
+
+#library-menu {
+  margin-top: 10px;
+}
+
+#logo-btn {
+  color: orange;
+  font-size: x-large;
+  border: none;
+}
+
+.nav-icon-btn {
+  border: none;
+  width: 25px;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.pages {
+  display: inline;
+  font-size: 12px;
+}
+
+.pages a {
+  margin-left: 5px;
+  color: black;
+}
+
+.m-page-container {
+  text-align: center;
+  display: block;
+  position: fixed;
+  top: 60px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.artists-slider {
+  width: 100%;
+  height: 500px;
+  background-color: #c0c0c0;
+  background-size: auto;
+  background-image: url('../img/girl.jpg');
+  position: relative;
+  background-size: contain;
+}
+
+#song-info {
+  margin-top: 5%;
+  position: relative;
+}
+
+#song-info .card {
+  width: 30%;
+  height: auto;
+  margin-left: 20%;
+}
+
+#song-info .card .cover-art img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.artists-slider h3 {
+  font-family: 'Roboto' sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#song-info .artists-name {
+  margin-left: 21%;
+  margin-top: -100px;
+  color: #e5e5e5;
+}
+
+#main-page.active {
+  left: -200px;
+  transition: all 500ms linear;
+}
+
+.player-card {
+  width: 90%;
+  height: 25%;
+  background-color: #ffa200;
+  margin-left: 5%;
+  margin-top: 450px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.player-card-sm {
+  width: 80px;
+  height: 65%;
+  background-color: orange;
+  margin-top: 2%;
+  margin-left: 3%;
+  display: block ruby;
+  color: white;
+  border-radius: 10px;
+}
+
+.player-control {
+  color: white;
+  display: flex;
+  margin-left: 148px;
+  margin-top: auto;
+}
+
+.player-control button {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  border: none;
+  background-color: orange;
+}
+
+.player-control #play-button {
+  background-color: orange;
+  opacity: 0.9;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+}
+
+.player-control #play-button i {
+  font-size: small;
+}
+
+.player-card-sm img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.player-card-sm h4 {
+  font-size: 20px;
+  display: table-caption;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.player-card-sm p {
+  margin-left: 5px;
+  margin-top: 5px;
+  display: block;
+}
+
+.albums-row {
+  width: 90%;
+  height: 180px;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 5%;
+}
+
+.album-items {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-left: 20px;
+  border: 2px solid #eaeaea;
+  cursor: pointer;
+}
+
+.trending {
+  margin-bottom: 6%;
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .05);
+  background: #fff;
+  position: relative;
+  width: 85%;
+  height: 70px;
+  margin-top: 24%;
+  margin-left: 7%;
+  display: flex;
+}
+
+.trending-songs {
+  display: inline;
+  margin-top: 20px;
+}
+
+#trending-button {
+  border: none;
+  background-color: white;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.trending-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.album-items img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  display: block;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.albums-title {
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 85px;
+  display: flex;
+}
+
+.albums-title h6 {
+  margin-left: 10px;
+  position: relative;
+  margin-top: 4px;
+}
+
+.albums-control {
+  float: right;
+  position: absolute;
+  margin-top: -12px;
+  margin-left: 1000px;
+  display: flex;
+}
+
+.arrow-left {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.9;
+  color: white;
+}
+
+.arrow-right {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.9;
+  color: white;
+}
+
+.arrow-left:hover {
+  background-color: black;
+  opacity: 0.9
+}
+
+.arrow-right:hover {
+  background-color: black;
+  opacity: 0.9
+}
+
+.Artist-name {
+  font-family: 'Roboto' sans-serif;
+  font-size: 25px;
+  display: block;
+}
+
+.number-songs {
+  font-size: 12px;
+  display: inline;
+  margin-right: 70px;
+}
+
+.number-songs i {
+  color: orange;
+}
+
+.pl-control-container {
+  width: 100%;
+  height: 56px;
+  background-color: #f2f2f2;
+  ;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  border-top: 1px solid #cecece;
+}
+
+.trending-track {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  margin-top: 15%;
+  background-color: white;
+}
+
+.trend-track {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  margin-top: 20%;
+  background-color: white;
+}
